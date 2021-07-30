@@ -1,4 +1,4 @@
-# Created at 2021-07-30T15:46:27.080
+# Created at 2021-07-30T16:09:37.611
 org.apache.maven.surefire.util.SurefireReflectionException: java.lang.ClassNotFoundException: org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
 	at org.apache.maven.surefire.util.ReflectionUtils.loadClass(ReflectionUtils.java:249)
 	at org.apache.maven.surefire.util.ReflectionUtils.instantiateOneArg(ReflectionUtils.java:133)

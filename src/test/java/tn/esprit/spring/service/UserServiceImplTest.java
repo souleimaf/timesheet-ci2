@@ -46,11 +46,11 @@ public class UserServiceImplTest {
 			Assert.assertEquals(u.getLastName(), userUpdated.getLastName());
 		}
 	
-		@Test
+		/*@Test
 		public void testRetrieveUser() {
 			User userRetrieved = us.retrieveUser("1"); 
 			Assert.assertEquals(1L, userRetrieved.getId().longValue());
-		}
+		}*/
 		
 //		@Test
 //		public void testDeleteUser() {
