@@ -20,7 +20,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class Contrat implements Serializable {
 	
 	private static final long serialVersionUID = 6191889143079517027L;
-
+	
+	//ajout commentaire git
+	//test branch
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	//@SequenceGenerator(name="seq")

@@ -1,8 +1,5 @@
 package tn.esprit.spring.service;
-
 import java.text.ParseException;
-import java.util.List;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,12 +17,12 @@ public class MissionServiceImplTest {
 	@Autowired
 	IMissionService ms; 
 
-	/*@Test
-	public void testRetrieveAllMissions() {
-		List<Mission> listMissions = ms.retrieveAllMissions(); 
-		// if there are 7 users in DB : 
-		Assert.assertEquals(2, listMissions.size());
-	}*/
+//	@Test
+//	public void testRetrieveAllMissions() {
+//		List<Mission> listMissions = ms.retrieveAllMissions(); 
+//		// if there are 7 users in DB : 
+//		Assert.assertEquals(2, listMissions.size());
+//	}
 	
 	
 	@Test
@@ -39,21 +36,21 @@ public class MissionServiceImplTest {
 	@Test
 	public void testModifyUser() throws ParseException   {
 
-		Mission m = new Mission("Souleima89", "esprit etud"); 
+		Mission m = new Mission(5L, "Souleima", "esprit etud"); 
 		Mission missionUpdated  = ms.updateMission(m); 
 		Assert.assertEquals(m.getName(), missionUpdated.getName());
 	}
 
-	/*@Test
-	public void testRetrieveMission() {
-		Mission missionRetrieved = ms.retrieveMission("1"); 
-		Assert.assertEquals(1L, missionRetrieved.getId().longValue());
-	}*/
+//	@Test
+//	public void testRetrieveMission() {
+//		Mission missionRetrieved = ms.retrieveMission("1"); 
+//		Assert.assertEquals(1L, missionRetrieved.getId().longValue());
+//	}
 	
-	/*@Test
-	public void testDeleteMission() {
-		ms.deleteMission("0");
-		Assert.assertNull(ms.retrieveMission("0"));
-	}*/
+//	@Test
+//	public void testDeleteMission() {
+//		ms.deleteMission("0");
+//		Assert.assertNull(ms.retrieveMission("0"));
+//	}
 	
 }

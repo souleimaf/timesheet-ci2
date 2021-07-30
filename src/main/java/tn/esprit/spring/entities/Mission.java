@@ -9,8 +9,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "T_MISSION")
 public class Mission implements Serializable {
 
 	private static final long serialVersionUID = -5369734855993305723L;
@@ -18,7 +20,7 @@ public class Mission implements Serializable {
 	// Auto Increment 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	private String name;
 	
@@ -40,12 +42,20 @@ public class Mission implements Serializable {
 		this.description = description;
 	}
 	
+	
+	
+	public Mission(Long id, String name, String description) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
