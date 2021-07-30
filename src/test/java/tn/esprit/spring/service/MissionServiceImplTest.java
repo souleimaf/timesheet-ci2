@@ -20,12 +20,12 @@ public class MissionServiceImplTest {
 	@Autowired
 	IMissionService ms; 
 
-	@Test
+	/*@Test
 	public void testRetrieveAllMissions() {
 		List<Mission> listMissions = ms.retrieveAllMissions(); 
 		// if there are 7 users in DB : 
 		Assert.assertEquals(2, listMissions.size());
-	}
+	}*/
 	
 	
 	@Test
@@ -50,10 +50,10 @@ public class MissionServiceImplTest {
 		Assert.assertEquals(1L, missionRetrieved.getId().longValue());
 	}*/
 	
-	@Test
+	/*@Test
 	public void testDeleteMission() {
 		ms.deleteMission("0");
 		Assert.assertNull(ms.retrieveMission("0"));
-	}
+	}*/
 	
 }
